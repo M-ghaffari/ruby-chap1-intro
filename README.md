@@ -126,3 +126,53 @@ MacBook-Proi:ruby-chap1-intro inoueshunji$ ruby helloruby.rb
 Heloo,_Ruby.
 
 ```
+```
+MacBook-Proi:ruby-chap1-intro inoueshunji$ irb --simple-prompt
+>> x+1
+Traceback (most recent call last):
+        2: from /Users/inoueshunji/.rbenv/versions/2.5.1/bin/irb:11:in `<main>'
+        1: from (irb):1
+NameError (undefined local variable or method `x' for main:Object)
+>> cd
+Traceback (most recent call last):
+        2: from /Users/inoueshunji/.rbenv/versions/2.5.1/bin/irb:11:in `<main>'
+        1: from (irb):2
+NameError (undefined local variable or method `cd' for main:Object)
+>> lv
+Traceback (most recent call last):
+        2: from /Users/inoueshunji/.rbenv/versions/2.5.1/bin/irb:11:in `<main>'
+        1: from (irb):3
+NameError (undefined local variable or method `lv' for main:Object)
+>> 2
+=> 2
+>> 
+>> 
+>> ruby
+Traceback (most recent call last):
+        2: from /Users/inoueshunji/.rbenv/versions/2.5.1/bin/irb:11:in `<main>'
+        1: from (irb):7
+NameError (undefined local variable or method `ruby' for main:Object)
+>> irb
+>> exit
+=> #<IRB::Irb: @context=#<IRB::Context:0x00007fe7730055e8>, @signal_status=:IN_EVAL, @scanner=#<RubyLex:0x00007fe772a02420>>
+>> exit!
+MacBook-Proi:ruby-chap1-intro inoueshunji$ irb --simple-prompt
+>> TEST=1
+=> 1
+>> test=2
+=> 2
+>> TEST =2
+(irb):3: warning: already initialized constant TEST
+(irb):1: warning: previous definition of TEST was here
+=> 2
+>> end =1
+Traceback (most recent call last):
+        1: from /Users/inoueshunji/.rbenv/versions/2.5.1/bin/irb:11:in `<main>'
+SyntaxError ((irb):4: syntax error, unexpected keyword_end)
+end =1
+^~~
+>> a,b,c=1,2,3
+=> [1, 2, 3]
+>> a,b,*c=1,2,3,4,5
+=> [1, 2, 3, 4, 5]
+```
